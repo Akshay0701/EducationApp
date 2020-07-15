@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".userPages.LoginUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginbannerone"
+            android:layout_height="200dp"></ImageView>
+        <LinearLayout
+            android:id="@+id/loginLinear"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Login"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:id="@+id/editText_phone"
+                android:layout_width="match_parent"
+                android:hint="Phone No"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_phone_dark"
+                android:layout_height="wrap_content"></EditText>
+            <Button
+                android:id="@+id/button_login"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttondesign"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_width="150dp"
+                android:text="Login"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"></Button>
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Not Already registered ? Click Here"
+                android:textColor="@color/colorDark"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/verficationlinear"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText_verficationKey"
+                android:layout_width="match_parent"
+                android:hint="Activation Ket"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_name_dark"
+                android:layout_height="wrap_content"></EditText>
+            <Button
+                android:id="@+id/botton_Activate"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttondesign"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_width="150dp"
+                android:text="Activate"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/loginbannertwo"
+        android:layout_height="200dp"></ImageView>
+
+</RelativeLayout>

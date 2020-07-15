@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+    <!--cahpter sub topic here list-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="3dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/editextdesign"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_medium"
+            android:layout_width="match_parent"
+            android:src="@drawable/sampleimg"
+            android:scaleType="centerCrop"
+            android:layout_height="180dp"></ImageView>
+        <TextView
+            android:id="@+id/txt_meidum_name"
+            android:layout_width="match_parent"
+            android:text="Subject"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+</RelativeLayout>
